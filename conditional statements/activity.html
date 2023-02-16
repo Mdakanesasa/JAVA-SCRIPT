@@ -1,0 +1,167 @@
+<DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewpoint" width="device width initial-scale 0.1>
+<meta http="X-UA Compitable" content="IE=edge"
+<title>if function</title>
+<script type="text/javascript">
+
+function add()
+{
+
+//Number()
+x = Number(document.getElementById("num1").value);
+y = Number(document.getElementById("num2").value);
+var z = x + y;
+document.getElementById("result1").value = z;
+
+
+
+
+
+
+
+
+}
+function sub()
+{
+x = Number(document.getElementById("num1").value);
+y = Number(document.getElementById("num2").value);
+var z = x - y;
+document.getElementById("result1").value = z;
+
+
+
+
+}
+
+function mult()
+{ 
+x = Number(document.getElementById("num1").value);
+y = Number(document.getElementById("num2").value);
+
+var z = x * y;
+document.getElementById("result1").value=z;
+
+}
+
+function mod()
+{ 
+x = Number(document.getElementById("num1").value);
+y = Number(document.getElementById("num2").value);
+
+var z=x % y;
+document.getElementById("result1").value=z;
+
+}
+
+function div()
+{ 
+x = Number(document.getElementById("num1").value);
+y = Number(document.getElementById("num2").value);
+
+var z=x / y;
+document.getElementById("result1").value=z;
+
+}
+
+
+function currency()
+{ 
+x = Number(document.getElementById("num1").value);
+y = Number(document.getElementById("num2").value);
+ 
+ var y=18.30;
+var z = x / y;
+document.getElementById("result2").value = z;
+
+}
+
+
+
+
+
+</script>
+</head>
+<body>
+<form>
+
+Number1: <input type="text"  id="num1" value=""/>
+<br/>
+Number2: <input type="text"  id="num2" value=""/>
+<br/>
+Results: <input type="text"  id="result1" value=""/>
+<br/>
+<input type="button" onclick="add()" value="+"/>
+
+<input type="button" onclick="sub()" value="-"/>
+
+<input type="button" onclick="mult()" value="*"/>
+
+
+<input type="button" onclick="mod()" value="%"/>
+<input type="button" onclick="div()" value="/"/>
+<br/>
+
+
+<br/>
+Number1: <input type="text"  id="num1" value=""/>
+
+
+<br/>
+<br/>
+Results: <input type="text"  id="result2" value=""/>
+<br/>
+<input type="button" onclick="currency()" value="$"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

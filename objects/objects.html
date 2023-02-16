@@ -1,0 +1,168 @@
+<DOCTYPE html>
+
+<html>
+
+
+<head>
+  <h1>Learning About Objects</h1>
+<script type="text/javascript">
+
+
+emp={id:104, name:"Fred James", salary:3000, empDoE:22-07-2013}
+document.write(emp.id + " " + emp.name + " " + emp.salary + " " + emp.empDoE);
+  document.write("<br/>");
+  car={ModelNo:"F1234", Name:"Ford", Model:"Ffiesta", YoM:2014};
+  document.write(car.ModelNo + " " + car.Name + " " + car.Model + " " + car.YoM);
+  document.write("<br/>");
+
+
+ // By creating instance of Object
+
+var emp = new Object();
+  emp.id = 1103;
+  emp.name = "Thandeka";
+  emp.salary = 45000
+document.write("<br/>");
+  var car = new Object();
+  car.ModelNo = "BMW4422";
+  car.Name = "BMW";
+  car.Model = "BMW440";
+  car.YoM = 2014-09-14;
+  document.write(emp.id + " " + emp.name + " " + emp.salary);
+  document.write("<br/>");
+  document.write("<br/>");
+ document.write(car.ModelNo + " " + car.Name + " " + car.Model + " " + car.YoM);
+ 
+ 
+ // Date Objects and get methods
+var todayDate = new Date();
+document.write(todayDate);
+document.write("<br/>");
+
+var myday = todayDate.getDate();
+document.write(myday);
+document.write("<br/>");
+
+var myYear = todayDate.getFullYear();
+document.write(myYear);
+document.write("<br/>");
+
+var myMonth = todayDate.getMonth();
+var myhour = todayDate.getHours();
+var myMin = todayDate.getMinutes();
+document.write(myYear + " : " + myMonth + " : " + myday + " : " + myhour  + " : " + myMin);
+document.write("<br/>");
+
+var myDate = new Date(1992,06,09);
+getmyDate = myDate.toDateString();
+document.write(getmyDate);
+document.write("<br/>");
+
+
+
+
+function DisplayTime()
+{
+  var xx = myYear + " : " + myMonth + " : " + myday + " : " + myhour  + " : " + myMin;
+  document.getElementById("showTime").value = xx;
+
+}
+
+// Date Object and set Methods
+var setDate = new Date();
+var updateYear = new Date();
+document.write(setDate);
+document.write("<br/>");
+
+setDate.setHours(setDate.getHours() + 5);
+document.write(setDate);
+document.write("<br/>");
+setDate.setFullYear(setDate.getFullYear() - 7);
+document.write(setDate);
+document.write("<br/>");
+updateYear.setFullYear(updateYear.getFullYear() - 9);
+document.write(updateYear);
+
+
+//string Objects and methods
+var myFullnames = new String("Thomas Edward Young");
+longname1 = myFullnames.toUpperCase();
+longname2 = myFullnames.toLowerCase();
+longname3 = myFullnames.length;
+longname4 = myFullnames.charAt(9);
+document.write(longname1);
+document.write("<br/>");
+document.write(longname2);
+document.write("<br/>");
+document.write(longname3);
+document.write("<br/>");
+document.write(longname4);
+document.write("<br/>");
+var s1 = "The world is  ";
+var s2 = "  a beautiful place";
+var s3 = " to be";
+document.write(s1.concat(s2.concat(s3)));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</head>
+<body> 
+
+<p id="showTime"></p>
+<button onclick="DisplayTime()">Diplay Time</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
